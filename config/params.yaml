@@ -1,0 +1,25 @@
+# LiDAR SLAM 参数配置文件 - V0.1
+
+# 点云预处理参数
+voxel_leaf_size: 0.1        # 体素滤波器叶子大小 (米)
+sor_meank: 50               # 统计滤波器近邻点数
+sor_stddev: 1.0             # 统计滤波器标准差倍数
+
+# 未来版本的预留参数
+# V0.2 - 里程计参数
+# icp_max_iterations: 50
+# icp_transformation_epsilon: 1e-6
+# icp_max_correspondence_distance: 1.0
+
+# V0.3 - 建图参数
+# local_map_size: 100
+# map_update_distance: 1.0
+
+# V0.4 - 回环检测参数
+# loop_closure_enabled: true
+# loop_search_radius: 15.0
+# loop_min_interval: 30
+
+# V0.5 - 后端优化参数
+# optimization_interval: 10
+# use_g2o: true
